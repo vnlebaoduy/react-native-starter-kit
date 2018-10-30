@@ -24,6 +24,10 @@
 - [styled-components/styled-components](https://github.com/styled-components/styled-components)
 - ...
 
+## Docs
+
+- [Common issues](./docs/issues.md)
+
 ## Getting Started
 
 ```
@@ -58,6 +62,10 @@ react-native run-android
 ```
 react-native run-ios
 ```
+
+### Debugging
+
+The debugging is with a Reactotron, [installation](https://github.com/infinitered/reactotron/blob/master/docs/installing.md).
 
 ### Author
 
