@@ -2,10 +2,25 @@
   "name": "ReactNativeStarterKit",
   "version": "1.0.0",
   "private": false,
+  "license": "MIT",
   "author": {
     "name": "William Novak",
     "email": "williamnvk@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/williamnvk/react-native-starter-kit"
+  },
+  "homepage": "https://github.com/williamnvk/react-native-starter-kit",
+  "keywords": [
+    "private",
+    "package",
+    "repository",
+    "reactr",
+    "react-native",
+    "redux",
+    "boilerplate"
+  ],
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "react-native run-android",
@@ -80,5 +95,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=6"
   }
 }

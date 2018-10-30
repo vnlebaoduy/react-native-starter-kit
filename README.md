@@ -1,6 +1,6 @@
 # react-native-starter-kit
 
-## Packages
+## Installed and configured packages
 
 > Native modules
 
@@ -30,6 +30,15 @@
 
 ## Getting Started
 
+1. System Requirements
+
+- Globally installed node
+- Globally installed react-native CLI
+
+2. Installation
+
+On the command prompt run the following commands
+
 ```
 # clone the repo
 git clone https://github.com/williamnvk/react-native-starter-kit YourAppName
@@ -49,13 +58,17 @@ npm install react-native-rename -g
 react-native-rename YourAppName
 ```
 
-### Run on android
+3. Simulate for Android
+
+> Make sure you have an Android emulator installed and running or device is plugged.
+
+Run the following command in your terminal
 
 ```
 react-native run-android
 ```
 
-### Run on IOS
+4. Simulate for IOS
 
 > not available now
 
@@ -63,9 +76,19 @@ react-native run-android
 react-native run-ios
 ```
 
-### Debugging
+5. Debugging
 
 The debugging is with a Reactotron, [installation](https://github.com/infinitered/reactotron/blob/master/docs/installing.md).
+
+---
+
+## Contributing
+
+If you find any problems, please [open an issue](https://github.com/williamnvk/react-native-starter-kit/issues/new) or submit a fix as a pull request.
+
+We welcome new features, but for large changes let's discuss first to make sure the changes can be accepted and integrated smoothly.
+
+[MIT](./LICENSE) License
 
 ### Author
 
