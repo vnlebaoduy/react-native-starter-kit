@@ -1,6 +1,6 @@
 /* eslint-disable */
 function logger(k, v) {
-  return __DEV__ && console.log(k, v);
+  return __DEV__ && console.tron.logImportant(k, v);
 }
 
 export default logger;

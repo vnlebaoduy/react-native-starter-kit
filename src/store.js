@@ -6,6 +6,7 @@ import sagas from 'sagas';
 import { createLogger } from 'redux-logger';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import Reactotron from 'config/configureReactotron'; // eslint-disable-line no-unused-vars
 
 const persistConfig = {
   key: 'root',
@@ -20,7 +21,9 @@ const logger = createLogger({
 
 const sagaMiddleware = createSagaMiddleware();
 const middlewares = [sagaMiddleware, thunk, __DEV__ && logger].filter(Boolean);
-const store = createStore(persistedReducers, applyMiddleware(...middlewares));
+const store = __DEV__
+  ? Reactotron.createStore(persistedReducers, applyMiddleware(...middlewares))
+  : createStore(persistedReducers, applyMiddleware(...middlewares));
 
 sagaMiddleware.run(sagas);
 

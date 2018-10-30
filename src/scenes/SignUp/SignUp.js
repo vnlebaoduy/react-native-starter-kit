@@ -5,31 +5,26 @@ import SignUpComponent from './SignUpComponent';
 
 class SignUp extends PureComponent {
   static propTypes = {
-    authenticated: PropTypes.bool,
+    auth: PropTypes.bool,
   };
 
   static defaultProps = {
-    authenticated: false,
+    auth: false,
   };
 
-  renderSignUp() {
-    const { authenticated } = this.props;
+  render() {
+    const { auth } = this.props;
     const mapPropsToComponent = {
-      authenticated,
+      auth,
     };
     return <SignUpComponent {...mapPropsToComponent} />;
   }
-
-  render() {
-    return this.renderSignUp();
-  }
 }
 
-const mapStateToProps = ({ auth: { authenticated } }) => ({
-  authenticated,
-});
+function mapStateToProps({ auth }) {
+  return {
+    auth,
+  };
+}
 
-export default connect(
-  mapStateToProps,
-  {},
-)(SignUp);
+export default connect(mapStateToProps)(SignUp);

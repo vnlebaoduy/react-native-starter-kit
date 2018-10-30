@@ -1,29 +1,50 @@
+export const rootStack = 'root';
+
+export const PUSH = 'push';
+export const SHOW_MODAL = 'showModal';
+export const POP = 'pop';
+export const SET_STACK_ROOT = 'setStackRoot';
+export const POP_TO_ROOT = 'popToRoot';
+
+const optionsBlank = {
+  options: {
+    topBar: {
+      visible: false,
+      title: false,
+      subtitle: false,
+      back: false,
+      drawBehind: true,
+    },
+  },
+};
+
 export const splashScene = {
   id: 'application.splashScene',
-  title: '',
+  ...optionsBlank,
 };
 
 export const authScene = {
   id: 'application.authScene',
-  title: 'Sign in',
+  ...optionsBlank,
 };
 
 export const signUpScene = {
   id: 'application.signUpScene',
-  title: 'Sign up',
+  ...optionsBlank,
 };
 
 export const signOutScene = {
   id: 'application.signOutScene',
-  title: 'Sign out',
+  ...optionsBlank,
 };
 
 export const drawerComponentScene = {
   id: 'application.drawerComponentScene',
-  title: '',
+  ...optionsBlank,
 };
 
 export default {
+  rootStack,
   splashScene,
   authScene,
   signUpScene,
